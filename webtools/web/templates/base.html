@@ -1,0 +1,427 @@
+<doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>  savxhbjnz</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <style>
+          main{
+              background-color: yellow;
+          }
+          .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+          }
+          
+          .active, .accordion:hover {
+            background-color: #ccc;
+          }
+          
+          .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          
+          .active:after {
+            content: "\2212";
+          }
+          
+          .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+          }
+          {
+            background-color:#26272b;
+            padding:45px 0 20px;
+            font-size:15px;
+            line-height:24px;
+            color:#737373;
+          }
+          .site-footer hr
+          {
+            border-top-color:#bbb;
+            opacity:0.5
+          }
+          .site-footer hr.small
+          {
+            margin:20px 0
+          }
+          .site-footer h6
+          {
+            color:#fff;
+            font-size:16px;
+            text-transform:uppercase;
+            margin-top:5px;
+            letter-spacing:2px
+          }
+          .site-footer a
+          {
+            color:#737373;
+          }
+          .site-footer a:hover
+          {
+            color:#3366cc;
+            text-decoration:none;
+          }
+          .footer-links
+          {
+            padding-left:0;
+            list-style:none
+          }
+          .footer-links li
+          {
+            display:block
+          }
+          .footer-links a
+          {
+            color:#737373
+          }
+          .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+          {
+            color:#3366cc;
+            text-decoration:none;
+          }
+          .footer-links.inline li
+          {
+            display:inline-block
+          }
+          .site-footer .social-icons
+          {
+            text-align:right
+          }
+          .site-footer .social-icons a
+          {
+            width:30px;
+            height:30px;
+            line-height:40px;
+            margin-left:6px;
+            margin-right:0;
+            border-radius:100%;
+            background-color:#33353d
+          }
+          .copyright-text
+          {
+            margin:0
+          }
+          @media (max-width:991px)
+          {
+            .site-footer [class^=col-]
+            {
+              margin-bottom:30px
+            }
+          }
+          @media (max-width:767px)
+          {
+            .site-footer
+            {
+              padding-bottom:0
+            }
+            .site-footer .copyright-text,.site-footer .social-icons
+            {
+              text-align:center
+            }
+          }
+          .social-icons
+          {
+            padding-left:0;
+            margin-bottom:0;
+            list-style:none
+          }
+          .social-icons li
+          {
+            display:inline-block;
+            margin-bottom:4px
+          }
+          .social-icons li.title
+          {
+            margin-right:15px;
+            text-transform:uppercase;
+            color:#96a2b2;
+            font-weight:700;
+            font-size:13px
+          }
+          .social-icons a{
+            background-color:#eceeef;
+            color:#818a91;
+            font-size:16px;
+            display:inline-block;
+            line-height:44px;
+            width:44px;
+            height:44px;
+            text-align:center;
+            margin-right:8px;
+            border-radius:100%;
+            -webkit-transition:all .2s linear;
+            -o-transition:all .2s linear;
+            transition:all .2s linear
+          }
+          .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+          {
+            color:#fff;
+            background-color:#29aafe
+          }
+          .social-icons.size-sm a
+          {
+            line-height:34px;
+            height:34px;
+            width:34px;
+            font-size:14px
+          }
+          .social-icons a.facebook:hover
+          {
+            background-color:#3b5998
+          }
+          .social-icons a.twitter:hover
+          {
+            background-color:#00aced
+          }
+          .social-icons a.linkedin:hover
+          {
+            background-color:#007bb6
+          }
+          .social-icons a.dribbble:hover
+          {
+            background-color:#ea4c89
+          }
+          @media (max-width:767px)
+          {
+            .social-icons li.title
+            {
+              display:block;
+              margin-right:0;
+              font-weight:600
+            }
+            * {
+              box-sizing: border-box;
+            }
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+            
+            label {
+              padding: 12px 12px 12px 0;
+              display: inline-block;
+            }
+            
+            input[type=submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+            
+            .col-25 {
+              float: left;
+              width: 25%;
+              margin-top: 6px;
+            }
+            
+            .col-75 {
+              float: left;
+              width: 75%;
+              margin-top: 6px;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+              }
+            }
+            </style>
+    </head>
+    <body>
+      {% load static %}
+
+
+      <main>
+        
+     
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src='{% static "grow.jpg" %}' style="height:60px; width:70px" class="card-img-top" alt="..."> 
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+    
+        </ul>
+      </div>
+      <form class="form-inline" >
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>All in one code!
+        
+      </strong> Count your word.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+      <center><h2> Enter your text</h2></center>
+        <form action="{% url 'counter' %} ">
+            <center><textarea name="message" rows="15" cols="100" ></textarea></center>
+            <br>
+            <center><input type="submit" value="count now" /></center>
+          
+          </form>
+          
+        <h2>Frequently Asked Questions</h2>
+        {% comment %} <p>Click on the buttons to open the collapsible content.</p> {% endcomment %}
+        
+        <button class="accordion">Q: How to find the word count using the Word Counter Tool? </button>
+        <div class="panel">
+          <p>A: Type your text into the space, and the word count will be updated as you type. Alternatively, copy and paste your text into the space, and your word count will be provided.</p>
+        </div>
+        
+        <button class="accordion">Q: What is Flesch reading score?</button>
+        <div class="panel">
+          <p>A: The Flesch reading ease measures the complexity of a text. The lower your score, the more complex your text is. The Flesch readability score uses the average length of your sentences and the average number of syllables per word in an equation to calculate your score.</p>
+        </div>
+        
+        <button class="accordion">Q:Can I post an update to my social media beyond the character count?</button>
+        <div class="panel">
+          <P>A: Yes you can, for Facebook and Instagram. Facebook posts allows you to post up to 63206 characters, and 2200 characters for Instagram posts. Unfortunately, 280 characters are all you get for Twitter posts.</p>
+        </div>
+        
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+      </main>
+
+
+
+      
+<footer class="site-footer bg-dark">
+  <div class="container">
+    <div class="row text-light">
+      <div class="col-sm-12 col-md-6">
+      <div class="ggh">  <img src='{%static "gron.png"%}' alt="Girl in a jacket" width="100" height="100"></div>
+        <h6>About-us</h6>
+        {% comment %} <left> <img src='{% static "gron.png"%}'  alt="" style="height:250; width:300"></left> {% endcomment %}
+        <p class="text-justify"><i>grownexttechnology.com</i><p>When it comes to choosing the best digital marketing agency in Patna, everyone says it’s Grow Next Technology Pvt. Ltd. With five years of experience in this field and more than 250 happy clients till now, our team has been doing marvellous jobs for years. Grow Next Technology is a full-service digital marketing agency that helps businesses grow their online presence and increase revenue.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3 " style="margin-top:100px;">
+        <h6>SEO-Tools</h6>
+        <ul class="footer-links">
+          <li><a href="analyzed">analyzer</a></li>
+          <li><a href="base">word-countre</a></li>
+          <li><a href="translator">Translater</a></li>
+          <li><a href="scrab/">Webscribing</a></li>
+        <li><a href="short'">Android</a>URL-shortner</li> 
+          <li><a href="http://scanfcode.com/category/templates/">Templates</a></li> 
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3 " style="margin-top:100px;">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          {% comment %} <img src='{% static "grow.jpg"%}'  alt=""> {% endcomment %}
+          <li><a href="http://scanfcode.com/about/">About Us</a></li>
+          <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+          <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+          <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2023 All right rezerved by Grow Next Technology Pvt Ltd
+     <a href="#"></a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        </body>
+        </html>

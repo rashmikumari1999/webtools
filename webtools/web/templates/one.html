@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            div{
+                width:500px;
+                height:auto;
+                border:solid 3px black;
+                margin:auto;
+            }
+            input[type='text']
+            {
+                width:492px;
+                font-size:20px;
+            }
+            input[type='submit']:hover{
+                background-color:blue;
+                color:white;
+<   }
+        </style>
+        
+       
+    </head>
+    <body> 
+     
+        
+<div>
+    <center><h3>Text to Speech</h3></center>
+   <form method="GET" action="ss">
+ {% csrf_token %}
+    <input type="text" name="inp" placeholder="Enter your text">
+    <center><input type="submit"></center>
+    </form>
+</div>
+    </body>
+    </html>
